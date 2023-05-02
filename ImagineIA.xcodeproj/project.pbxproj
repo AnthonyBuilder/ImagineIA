@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		862632C829DCD1D200E98000 /* DisplayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862632C729DCD1D200E98000 /* DisplayImage.swift */; };
+		862632CA29DCE33200E98000 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862632C929DCE33200E98000 /* ImageModifier.swift */; };
+		862632CC29DD033F00E98000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862632CB29DD033F00E98000 /* Assets.xcassets */; };
+		862632CF29DD9E9100E98000 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 862632CE29DD9E9100E98000 /* GoogleMobileAds */; };
+		862632D129DDBAB400E98000 /* FullIMageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862632D029DDBAB400E98000 /* FullIMageVIew.swift */; };
+		868ECDB929D4FDC0001D3893 /* ImagineIAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDB829D4FDC0001D3893 /* ImagineIAApp.swift */; };
+		868ECDBB29D4FDC0001D3893 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDBA29D4FDC0001D3893 /* ContentView.swift */; };
+		868ECDC029D4FDC2001D3893 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868ECDBF29D4FDC2001D3893 /* Preview Assets.xcassets */; };
+		868ECDC529D4FDC2001D3893 /* ImagineIA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDC329D4FDC2001D3893 /* ImagineIA.xcdatamodeld */; };
+		868ECDCF29D4FDC3001D3893 /* ImagineIATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDCE29D4FDC3001D3893 /* ImagineIATests.swift */; };
+		868ECDD929D4FDC3001D3893 /* ImagineIAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDD829D4FDC3001D3893 /* ImagineIAUITests.swift */; };
+		868ECDDB29D4FDC3001D3893 /* ImagineIAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDDA29D4FDC3001D3893 /* ImagineIAUITestsLaunchTests.swift */; };
+		86E09F8C29E7408500A32AF7 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E09F8B29E7408500A32AF7 /* BannerAd.swift */; };
+		86EB4DC529D5DA4D0023F2F9 /* OpenIA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EB4DC429D5DA4D0023F2F9 /* OpenIA.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		868ECDCB29D4FDC3001D3893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 868ECDAD29D4FDC0001D3893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 868ECDB429D4FDC0001D3893;
+			remoteInfo = ImagineIA;
+		};
+		868ECDD529D4FDC3001D3893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 868ECDAD29D4FDC0001D3893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 868ECDB429D4FDC0001D3893;
+			remoteInfo = ImagineIA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		862632C729DCD1D200E98000 /* DisplayImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImage.swift; sourceTree = "<group>"; };
+		862632C929DCE33200E98000 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
+		862632CB29DD033F00E98000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		862632D029DDBAB400E98000 /* FullIMageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullIMageVIew.swift; sourceTree = "<group>"; };
+		868ECDB529D4FDC0001D3893 /* ImagineIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagineIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		868ECDB829D4FDC0001D3893 /* ImagineIAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineIAApp.swift; sourceTree = "<group>"; };
+		868ECDBA29D4FDC0001D3893 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		868ECDBF29D4FDC2001D3893 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		868ECDC429D4FDC2001D3893 /* ImagineIA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImagineIA.xcdatamodel; sourceTree = "<group>"; };
+		868ECDCA29D4FDC3001D3893 /* ImagineIATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagineIATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		868ECDCE29D4FDC3001D3893 /* ImagineIATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineIATests.swift; sourceTree = "<group>"; };
+		868ECDD429D4FDC3001D3893 /* ImagineIAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagineIAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		868ECDD829D4FDC3001D3893 /* ImagineIAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineIAUITests.swift; sourceTree = "<group>"; };
+		868ECDDA29D4FDC3001D3893 /* ImagineIAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineIAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86E09F8B29E7408500A32AF7 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		86EB4DC429D5DA4D0023F2F9 /* OpenIA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenIA.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		868ECDB229D4FDC0001D3893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862632CF29DD9E9100E98000 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868ECDC729D4FDC3001D3893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868ECDD129D4FDC3001D3893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		868ECDAC29D4FDC0001D3893 = {
+			isa = PBXGroup;
+			children = (
+				868ECDB729D4FDC0001D3893 /* ImagineIA */,
+				868ECDCD29D4FDC3001D3893 /* ImagineIATests */,
+				868ECDD729D4FDC3001D3893 /* ImagineIAUITests */,
+				868ECDB629D4FDC0001D3893 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		868ECDB629D4FDC0001D3893 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				868ECDB529D4FDC0001D3893 /* ImagineIA.app */,
+				868ECDCA29D4FDC3001D3893 /* ImagineIATests.xctest */,
+				868ECDD429D4FDC3001D3893 /* ImagineIAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		868ECDB729D4FDC0001D3893 /* ImagineIA */ = {
+			isa = PBXGroup;
+			children = (
+				86E09F8A29E7407600A32AF7 /* Components */,
+				86EB4DC329D5D3C50023F2F9 /* API */,
+				868ECDB829D4FDC0001D3893 /* ImagineIAApp.swift */,
+				868ECDBA29D4FDC0001D3893 /* ContentView.swift */,
+				868ECDC329D4FDC2001D3893 /* ImagineIA.xcdatamodeld */,
+				868ECDBE29D4FDC2001D3893 /* Preview Content */,
+				862632C729DCD1D200E98000 /* DisplayImage.swift */,
+				862632C929DCE33200E98000 /* ImageModifier.swift */,
+				862632CB29DD033F00E98000 /* Assets.xcassets */,
+				862632D029DDBAB400E98000 /* FullIMageVIew.swift */,
+			);
+			path = ImagineIA;
+			sourceTree = "<group>";
+		};
+		868ECDBE29D4FDC2001D3893 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				868ECDBF29D4FDC2001D3893 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		868ECDCD29D4FDC3001D3893 /* ImagineIATests */ = {
+			isa = PBXGroup;
+			children = (
+				868ECDCE29D4FDC3001D3893 /* ImagineIATests.swift */,
+			);
+			path = ImagineIATests;
+			sourceTree = "<group>";
+		};
+		868ECDD729D4FDC3001D3893 /* ImagineIAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				868ECDD829D4FDC3001D3893 /* ImagineIAUITests.swift */,
+				868ECDDA29D4FDC3001D3893 /* ImagineIAUITestsLaunchTests.swift */,
+			);
+			path = ImagineIAUITests;
+			sourceTree = "<group>";
+		};
+		86E09F8A29E7407600A32AF7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				86E09F8B29E7408500A32AF7 /* BannerAd.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		86EB4DC329D5D3C50023F2F9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				86EB4DC429D5DA4D0023F2F9 /* OpenIA.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		868ECDB429D4FDC0001D3893 /* ImagineIA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 868ECDDE29D4FDC3001D3893 /* Build configuration list for PBXNativeTarget "ImagineIA" */;
+			buildPhases = (
+				868ECDB129D4FDC0001D3893 /* Sources */,
+				868ECDB229D4FDC0001D3893 /* Frameworks */,
+				868ECDB329D4FDC0001D3893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImagineIA;
+			packageProductDependencies = (
+				862632CE29DD9E9100E98000 /* GoogleMobileAds */,
+			);
+			productName = ImagineIA;
+			productReference = 868ECDB529D4FDC0001D3893 /* ImagineIA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		868ECDC929D4FDC3001D3893 /* ImagineIATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 868ECDE129D4FDC3001D3893 /* Build configuration list for PBXNativeTarget "ImagineIATests" */;
+			buildPhases = (
+				868ECDC629D4FDC3001D3893 /* Sources */,
+				868ECDC729D4FDC3001D3893 /* Frameworks */,
+				868ECDC829D4FDC3001D3893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				868ECDCC29D4FDC3001D3893 /* PBXTargetDependency */,
+			);
+			name = ImagineIATests;
+			productName = ImagineIATests;
+			productReference = 868ECDCA29D4FDC3001D3893 /* ImagineIATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		868ECDD329D4FDC3001D3893 /* ImagineIAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 868ECDE429D4FDC3001D3893 /* Build configuration list for PBXNativeTarget "ImagineIAUITests" */;
+			buildPhases = (
+				868ECDD029D4FDC3001D3893 /* Sources */,
+				868ECDD129D4FDC3001D3893 /* Frameworks */,
+				868ECDD229D4FDC3001D3893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				868ECDD629D4FDC3001D3893 /* PBXTargetDependency */,
+			);
+			name = ImagineIAUITests;
+			productName = ImagineIAUITests;
+			productReference = 868ECDD429D4FDC3001D3893 /* ImagineIAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		868ECDAD29D4FDC0001D3893 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					868ECDB429D4FDC0001D3893 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					868ECDC929D4FDC3001D3893 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 868ECDB429D4FDC0001D3893;
+					};
+					868ECDD329D4FDC3001D3893 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 868ECDB429D4FDC0001D3893;
+					};
+				};
+			};
+			buildConfigurationList = 868ECDB029D4FDC0001D3893 /* Build configuration list for PBXProject "ImagineIA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 868ECDAC29D4FDC0001D3893;
+			packageReferences = (
+				862632CD29DD9E9100E98000 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = 868ECDB629D4FDC0001D3893 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				868ECDB429D4FDC0001D3893 /* ImagineIA */,
+				868ECDC929D4FDC3001D3893 /* ImagineIATests */,
+				868ECDD329D4FDC3001D3893 /* ImagineIAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		868ECDB329D4FDC0001D3893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862632CC29DD033F00E98000 /* Assets.xcassets in Resources */,
+				868ECDC029D4FDC2001D3893 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868ECDC829D4FDC3001D3893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868ECDD229D4FDC3001D3893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		868ECDB129D4FDC0001D3893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862632CA29DCE33200E98000 /* ImageModifier.swift in Sources */,
+				868ECDBB29D4FDC0001D3893 /* ContentView.swift in Sources */,
+				868ECDC529D4FDC2001D3893 /* ImagineIA.xcdatamodeld in Sources */,
+				86EB4DC529D5DA4D0023F2F9 /* OpenIA.swift in Sources */,
+				86E09F8C29E7408500A32AF7 /* BannerAd.swift in Sources */,
+				862632C829DCD1D200E98000 /* DisplayImage.swift in Sources */,
+				862632D129DDBAB400E98000 /* FullIMageVIew.swift in Sources */,
+				868ECDB929D4FDC0001D3893 /* ImagineIAApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868ECDC629D4FDC3001D3893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868ECDCF29D4FDC3001D3893 /* ImagineIATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868ECDD029D4FDC3001D3893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868ECDD929D4FDC3001D3893 /* ImagineIAUITests.swift in Sources */,
+				868ECDDB29D4FDC3001D3893 /* ImagineIAUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		868ECDCC29D4FDC3001D3893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 868ECDB429D4FDC0001D3893 /* ImagineIA */;
+			targetProxy = 868ECDCB29D4FDC3001D3893 /* PBXContainerItemProxy */;
+		};
+		868ECDD629D4FDC3001D3893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 868ECDB429D4FDC0001D3893 /* ImagineIA */;
+			targetProxy = 868ECDD529D4FDC3001D3893 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		868ECDDC29D4FDC3001D3893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		868ECDDD29D4FDC3001D3893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		868ECDDF29D4FDC3001D3893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImagineIA/Preview Content\"";
+				DEVELOPMENT_TEAM = 8UF6K7CB33;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImagineIA/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyjose.ImagineIA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		868ECDE029D4FDC3001D3893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImagineIA/Preview Content\"";
+				DEVELOPMENT_TEAM = 8UF6K7CB33;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImagineIA/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyjose.ImagineIA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		868ECDE229D4FDC3001D3893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UF6K7CB33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyjose.ImagineIATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImagineIA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImagineIA";
+			};
+			name = Debug;
+		};
+		868ECDE329D4FDC3001D3893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UF6K7CB33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyjose.ImagineIATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImagineIA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImagineIA";
+			};
+			name = Release;
+		};
+		868ECDE529D4FDC3001D3893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UF6K7CB33;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyjose.ImagineIAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImagineIA;
+			};
+			name = Debug;
+		};
+		868ECDE629D4FDC3001D3893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UF6K7CB33;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyjose.ImagineIAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImagineIA;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		868ECDB029D4FDC0001D3893 /* Build configuration list for PBXProject "ImagineIA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868ECDDC29D4FDC3001D3893 /* Debug */,
+				868ECDDD29D4FDC3001D3893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		868ECDDE29D4FDC3001D3893 /* Build configuration list for PBXNativeTarget "ImagineIA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868ECDDF29D4FDC3001D3893 /* Debug */,
+				868ECDE029D4FDC3001D3893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		868ECDE129D4FDC3001D3893 /* Build configuration list for PBXNativeTarget "ImagineIATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868ECDE229D4FDC3001D3893 /* Debug */,
+				868ECDE329D4FDC3001D3893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		868ECDE429D4FDC3001D3893 /* Build configuration list for PBXNativeTarget "ImagineIAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868ECDE529D4FDC3001D3893 /* Debug */,
+				868ECDE629D4FDC3001D3893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		862632CD29DD9E9100E98000 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		862632CE29DD9E9100E98000 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 862632CD29DD9E9100E98000 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		868ECDC329D4FDC2001D3893 /* ImagineIA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				868ECDC429D4FDC2001D3893 /* ImagineIA.xcdatamodel */,
+			);
+			currentVersion = 868ECDC429D4FDC2001D3893 /* ImagineIA.xcdatamodel */;
+			path = ImagineIA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 868ECDAD29D4FDC0001D3893 /* Project object */;
+}
