@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		862632C829DCD1D200E98000 /* DisplayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862632C729DCD1D200E98000 /* DisplayImage.swift */; };
 		862632CA29DCE33200E98000 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862632C929DCE33200E98000 /* ImageModifier.swift */; };
-		862632CC29DD033F00E98000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862632CB29DD033F00E98000 /* Assets.xcassets */; };
 		862632CF29DD9E9100E98000 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 862632CE29DD9E9100E98000 /* GoogleMobileAds */; };
 		862632D129DDBAB400E98000 /* FullIMageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862632D029DDBAB400E98000 /* FullIMageVIew.swift */; };
+		867E95942A01C52C00F99B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867E95932A01C52C00F99B9A /* Assets.xcassets */; };
 		868ECDB929D4FDC0001D3893 /* ImagineIAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDB829D4FDC0001D3893 /* ImagineIAApp.swift */; };
 		868ECDBB29D4FDC0001D3893 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDBA29D4FDC0001D3893 /* ContentView.swift */; };
 		868ECDC029D4FDC2001D3893 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868ECDBF29D4FDC2001D3893 /* Preview Assets.xcassets */; };
@@ -43,8 +43,8 @@
 /* Begin PBXFileReference section */
 		862632C729DCD1D200E98000 /* DisplayImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImage.swift; sourceTree = "<group>"; };
 		862632C929DCE33200E98000 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
-		862632CB29DD033F00E98000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		862632D029DDBAB400E98000 /* FullIMageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullIMageVIew.swift; sourceTree = "<group>"; };
+		867E95932A01C52C00F99B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868ECDB529D4FDC0001D3893 /* ImagineIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagineIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868ECDB829D4FDC0001D3893 /* ImagineIAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineIAApp.swift; sourceTree = "<group>"; };
 		868ECDBA29D4FDC0001D3893 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 				868ECDBE29D4FDC2001D3893 /* Preview Content */,
 				862632C729DCD1D200E98000 /* DisplayImage.swift */,
 				862632C929DCE33200E98000 /* ImageModifier.swift */,
-				862632CB29DD033F00E98000 /* Assets.xcassets */,
+				867E95932A01C52C00F99B9A /* Assets.xcassets */,
 				862632D029DDBAB400E98000 /* FullIMageVIew.swift */,
 			);
 			path = ImagineIA;
@@ -273,7 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862632CC29DD033F00E98000 /* Assets.xcassets in Resources */,
+				867E95942A01C52C00F99B9A /* Assets.xcassets in Resources */,
 				868ECDC029D4FDC2001D3893 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
