@@ -31,7 +31,7 @@ struct ContentView: View {
                         
                         VStack(alignment: .center) {
                             Picker("Choose how many images you want to generate", selection: $numberImages) {
-                                ForEach(1..<100, id: \.self) {
+                                ForEach(1..<11, id: \.self) {
                                     Text("\($0)")
                                 }
                             }

@@ -12,8 +12,8 @@
 		862632CF29DD9E9100E98000 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 862632CE29DD9E9100E98000 /* GoogleMobileAds */; };
 		862632D129DDBAB400E98000 /* FullIMageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862632D029DDBAB400E98000 /* FullIMageVIew.swift */; };
 		867E95942A01C52C00F99B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867E95932A01C52C00F99B9A /* Assets.xcassets */; };
+		867E95962A01CED900F99B9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867E95952A01CED900F99B9A /* ContentView.swift */; };
 		868ECDB929D4FDC0001D3893 /* ImagineIAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDB829D4FDC0001D3893 /* ImagineIAApp.swift */; };
-		868ECDBB29D4FDC0001D3893 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDBA29D4FDC0001D3893 /* ContentView.swift */; };
 		868ECDC029D4FDC2001D3893 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868ECDBF29D4FDC2001D3893 /* Preview Assets.xcassets */; };
 		868ECDC529D4FDC2001D3893 /* ImagineIA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDC329D4FDC2001D3893 /* ImagineIA.xcdatamodeld */; };
 		868ECDCF29D4FDC3001D3893 /* ImagineIATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868ECDCE29D4FDC3001D3893 /* ImagineIATests.swift */; };
@@ -45,9 +45,9 @@
 		862632C929DCE33200E98000 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
 		862632D029DDBAB400E98000 /* FullIMageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullIMageVIew.swift; sourceTree = "<group>"; };
 		867E95932A01C52C00F99B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		867E95952A01CED900F99B9A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		868ECDB529D4FDC0001D3893 /* ImagineIA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagineIA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868ECDB829D4FDC0001D3893 /* ImagineIAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagineIAApp.swift; sourceTree = "<group>"; };
-		868ECDBA29D4FDC0001D3893 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		868ECDBF29D4FDC2001D3893 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		868ECDC429D4FDC2001D3893 /* ImagineIA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImagineIA.xcdatamodel; sourceTree = "<group>"; };
 		868ECDCA29D4FDC3001D3893 /* ImagineIATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagineIATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,13 +111,13 @@
 				86E09F8A29E7407600A32AF7 /* Components */,
 				86EB4DC329D5D3C50023F2F9 /* API */,
 				868ECDB829D4FDC0001D3893 /* ImagineIAApp.swift */,
-				868ECDBA29D4FDC0001D3893 /* ContentView.swift */,
 				868ECDC329D4FDC2001D3893 /* ImagineIA.xcdatamodeld */,
 				868ECDBE29D4FDC2001D3893 /* Preview Content */,
 				862632C729DCD1D200E98000 /* DisplayImage.swift */,
 				862632C929DCE33200E98000 /* ImageModifier.swift */,
 				867E95932A01C52C00F99B9A /* Assets.xcassets */,
 				862632D029DDBAB400E98000 /* FullIMageVIew.swift */,
+				867E95952A01CED900F99B9A /* ContentView.swift */,
 			);
 			path = ImagineIA;
 			sourceTree = "<group>";
@@ -300,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				862632CA29DCE33200E98000 /* ImageModifier.swift in Sources */,
-				868ECDBB29D4FDC0001D3893 /* ContentView.swift in Sources */,
 				868ECDC529D4FDC2001D3893 /* ImagineIA.xcdatamodeld in Sources */,
+				867E95962A01CED900F99B9A /* ContentView.swift in Sources */,
 				86EB4DC529D5DA4D0023F2F9 /* OpenIA.swift in Sources */,
 				86E09F8C29E7408500A32AF7 /* BannerAd.swift in Sources */,
 				862632C829DCD1D200E98000 /* DisplayImage.swift in Sources */,
