@@ -20,7 +20,7 @@ import Foundation
             
             var request = URLRequest(url: url)
             
-            request.setValue("Bearer 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", forHTTPHeaderField: "Authorization")
+            request.setValue("Bearer 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", forHTTPHeaderField: "Authorization")
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             request.httpMethod = "POST"
             request.httpBody = finalBody
