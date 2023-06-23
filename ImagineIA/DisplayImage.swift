@@ -7,16 +7,46 @@
 
 import SwiftUI
 
+fileprivate class ImagesURL: ObservableObject {
+    @Published var urls: [Datum] = [Datum(url: "")]
+}
+
 
 struct DisplayImage: View {
     
     @Binding var text: String
     @Binding var numberImages: Int
     
-    @State private var urls: [Datum] = [Datum(url: "")]
+    @ObservedObject private var urls = ImagesURL()
+    
     @State private var errorResult = OpenIAError(error: ErrorModel(message: "", type: ""))
     
     @State var columns = [GridItem(.flexible()), GridItem(.flexible())]
+    
+    init(text: Binding<String>, numberImages: Binding<Int>, errorResult: OpenIAError = OpenIAError(error: ErrorModel(message: "", type: "")), columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]) {
+        self._text = text
+        self._numberImages = numberImages
+        self.errorResult = errorResult
+        self.columns = columns
+        
+        getData()
+    }
+    
+    
+    func getData() {
+        Task {
+            await APIOpenIA().generateImage(image: text, number: numberImages, completion: { result in
+                switch result {
+                case .success(let success):
+                    self.urls.urls = success.data!
+                    print("success", success)
+                case .failure(let failure):
+                    self.errorResult = failure
+                    print("failure", failure)
+                }
+            })
+        }
+    }
     
     var body: some View {
            Group {
@@ -29,12 +59,12 @@ struct DisplayImage: View {
                            }.padding()
                        } else {
                            LazyVGrid(columns: columns) {
-                               ForEach(urls, id: \.self) { result in
+                               ForEach(self.urls.urls, id: \.self) { result in
                                    Color.clear.overlay(
                                     AsyncImage(url: URL(string: result.url), transaction: Transaction(animation: .easeInOut(duration: 0.5))) { phase in
                                         switch phase {
                                         case .success(let image):
-                                            NavigationLink(destination: FullImageView(url: result.url)) {
+                                            NavigationLink(destination: FullImageView(image: image)) {
                                                 image
                                                     .resizable()
                                                     .scaledToFit()
@@ -57,21 +87,13 @@ struct DisplayImage: View {
                            }.padding(5)
                        }
                    }
-               }.onAppear() {
-                   Task {
-                       await APIOpenIA().generateImage(image: text, number: numberImages, completion: { result in
-                           switch result {
-                           case .success(let success):
-                               self.urls = success.data ?? [Datum(url: "")]
-                               print("success", success)
-                           case .failure(let failure):
-                               self.errorResult = failure
-                               print("failure", failure)
-                           }
-                       })
-                   }
                }
+               
+               Spacer()
+               
+               VStack {
+                 BannerAd(unitID: "ca-app-pub-8762893864776699/6944583961")
+               }.frame(height: 70)
            }
     }
 }
-

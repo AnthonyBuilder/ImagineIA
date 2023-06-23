@@ -9,26 +9,22 @@ import Foundation
 import SwiftUI
 
 struct FullImageView: View {
-    @State var url = ""
+    @State var image: Image
     
     var body: some View {
         Group {
             GeometryReader { geo in
-                AsyncImage(url: URL(string: url), transaction: Transaction(animation: .easeInOut(duration: 0.5))) { phase in
-                    switch phase {
-                    case .success(let image):
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .modifier(ImageModifier(contentSize: CGSize(width: geo.size.width, height: geo.size.height)))
-                        
-                        ShareLink(item: phase.image!, preview: SharePreview("ImagineIA - \(Date())", image: phase.image!))
-                        
-                    default:
-                        ProgressView()
-                    }
+                VStack(alignment: .center) {
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .modifier(ImageModifier(contentSize: CGSize(width: geo.size.width, height: geo.size.height)))
+                    
+                    ShareLink(item: image, preview: SharePreview("ImagineIA - \(Date())", image: image))
                 }
             }
+        }.onAppear() {
+            Interstitial.shared.loadInterstitial()
         }
     }
 }
