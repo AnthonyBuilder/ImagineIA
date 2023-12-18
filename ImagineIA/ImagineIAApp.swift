@@ -48,7 +48,7 @@ class Interstitial: NSObject, GADFullScreenContentDelegate {
     /// Request AdMob Interstitial ads
     func loadInterstitial() {
         let request = GADRequest()
-        GADInterstitialAd.load(withAdUnitID: "ca-app-pub-8762893864776699/4088370237", request: request, completionHandler: { [self] ad, error in
+        GADInterstitialAd.load(withAdUnitID: "ca-app-pub-8762893864776699/2747873953", request: request, completionHandler: { [self] ad, error in
             if ad != nil { interstitial = ad }
             interstitial?.fullScreenContentDelegate = self
         })

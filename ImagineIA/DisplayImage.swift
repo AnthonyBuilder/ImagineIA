@@ -7,55 +7,19 @@
 
 import SwiftUI
 
-fileprivate class ImagesURL: ObservableObject {
-    @Published var urls: [Datum] = [Datum(url: "")]
-}
-
-
 struct DisplayImage: View {
-    
-    @Binding var text: String
-    @Binding var numberImages: Int
-    
-    @ObservedObject private var urls = ImagesURL()
-    
-    @State private var errorResult = OpenIAError(error: ErrorModel(message: "", type: ""))
-    
-    @State var columns = [GridItem(.flexible()), GridItem(.flexible())]
-    
-    init(text: Binding<String>, numberImages: Binding<Int>, errorResult: OpenIAError = OpenIAError(error: ErrorModel(message: "", type: "")), columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]) {
-        self._text = text
-        self._numberImages = numberImages
-        self.errorResult = errorResult
-        self.columns = columns
         
-        getData()
-    }
-    
-    
-    func getData() {
-        Task {
-            await APIOpenIA().generateImage(image: text, number: numberImages, completion: { result in
-                switch result {
-                case .success(let success):
-                    self.urls.urls = success.data!
-                    print("success", success)
-                case .failure(let failure):
-                    self.errorResult = failure
-                    print("failure", failure)
-                }
-            })
-        }
-    }
-    
+    @StateObject private var urls = ImagesURL.sharedSingleton
+    @State var columns = [GridItem(.flexible()), GridItem(.flexible())]
+
     var body: some View {
            Group {
                GeometryReader { geo in
                    ScrollView(showsIndicators: false) {
-                       if errorResult.error.message != "" {
+                       if urls.errorResult.error.message != "" {
                            VStack(alignment: .center) {
                                Text("Sorry :(").font(.largeTitle).padding()
-                               Text(errorResult.error.message)
+                               Text(urls.errorResult.error.message)
                            }.padding()
                        } else {
                            LazyVGrid(columns: columns) {
@@ -74,7 +38,7 @@ struct DisplayImage: View {
                                                 ProgressView()
                                             }
                                         case .failure(_):
-                                            Text(errorResult.error.message)
+                                            Text(urls.errorResult.error.message)
                                         @unknown default:
                                             EmptyView()
                                         }
@@ -84,15 +48,15 @@ struct DisplayImage: View {
                                    .aspectRatio(1, contentMode: .fit) // << for square !!
                                    .clipped()
                                }
+                               
                            }.padding(5)
                        }
                    }
                }
-               
                Spacer()
                
                VStack {
-                 BannerAd(unitID: "ca-app-pub-8762893864776699/6944583961")
+                   BannerAd(unitID: "ca-app-pub-8762893864776699/1465324983")
                }.frame(height: 70)
            }
     }

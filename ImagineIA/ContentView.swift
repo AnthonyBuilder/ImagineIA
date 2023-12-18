@@ -10,10 +10,8 @@ import CoreData
 import PhotosUI
 import SwiftUI
 import OpenAIKit
-import GoogleMobileAds
 
 struct ContentView: View {
-    
     var body: some View {
         NavigationView {
             TabView {
@@ -73,9 +71,6 @@ struct GenerateImageVariationExample: View {
                 if isGeneratingVariation == true {
                     VStack {
                         ProgressView("Generating Image...")
-                    }.onAppear() {
-                        Interstitial.shared.loadInterstitial()
-                        Interstitial.shared.showInterstitialAds()
                     }
                 } else {
                     VStack {
@@ -83,20 +78,8 @@ struct GenerateImageVariationExample: View {
                             .frame(maxWidth: .infinity)
                             .aspectRatio(1, contentMode: .fit) // << for square !!
                             .clipped()
-                            .onAppear() {
-                                Interstitial.shared.loadInterstitial()
-                                Interstitial.shared.showInterstitialAds()
-                            }
-                        
-                         Spacer()
-                        
-                        VStack {
-                          BannerAd(unitID: "ca-app-pub-8762893864776699/6944583961")
-                        }.frame(height: 70)
                     }
                 }
-                
-                
             }
             .toolbar {
                 PhotosPicker("Select images", selection: $selectedItems, maxSelectionCount: 1, matching: .images)
@@ -113,7 +96,7 @@ struct GenerateImageVariationExample: View {
                                     do {
                                         let config = Configuration(
                                             organizationId: "personal",
-                                            apiKey: "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"
+                                            apiKey: "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"
                                         )
                                         let openAI = OpenAI(config)
                                         
@@ -166,33 +149,26 @@ struct TextGenerateView: View {
                 Text("Describe something you would like to see!").font(.title3).foregroundColor(.secondary).multilineTextAlignment(.center)
             }.padding()
                             
-            if #available(iOS 15.0, *) {
-                HStack(alignment: .center) {
-                    TextField(text: $inputImage) { Text("Example: cat with hat") }
-                        .padding(5)
-                        .background(RoundedRectangle(cornerRadius: 8).fill(Color("FormDark")))
-                        .padding(.leading)
-                    
-                    
-                    VStack(alignment: .center) {
-                        Picker("Choose how many images you want to generate", selection: $numberImages) {
-                            ForEach(1..<11, id: \.self) {
-                                Text("\($0)")
-                            }
+            HStack(alignment: .center) {
+                TextField(text: $inputImage) { Text("Example: cat with hat") }
+                    .padding(5)
+                    .background(RoundedRectangle(cornerRadius: 8).fill(Color("FormDark")))
+                    .padding(.leading)
+                
+                
+                VStack(alignment: .center) {
+                    Picker("Choose how many images you want to generate", selection: $numberImages) {
+                        ForEach(1..<11, id: \.self) {
+                            Text("\($0)")
                         }
-                        .padding(.trailing)
-                        .pickerStyle(.wheel)
-                        
-                        
-                    }.frame(width: 120, height: 100)
+                    }
+                    .padding(.trailing)
+                    .pickerStyle(.wheel)
+                    
+                    
+                }.frame(width: 120, height: 100)
                 }
-            } else {
-                // Fallback on earlier versions
-                TextField("Example: cat with hat", text: $inputImage)
-                    .padding(20)
-                    .textFieldStyle(.roundedBorder)
-                    .shadow(radius: 2)
-            }
+            
             
             VStack(alignment: .leading) {
                 Text("Choose how many images you want to generate.")
@@ -200,20 +176,23 @@ struct TextGenerateView: View {
                     .foregroundColor(.secondary)
             }.padding(5)
             
-            NavigationLink(destination: DisplayImage(text: $inputImage, numberImages: $numberImages)) {
-                    if inputImage == "" {
-                        Text("Continue")
-                           .foregroundColor(.white)
-                           .padding(10)
-                           .background(RoundedRectangle(cornerRadius: 8).fill(Color.gray))
-                    } else {
-                        Text("Continue")
-                            .foregroundColor(.white)
-                            .padding(10)
-                            .background(RoundedRectangle(cornerRadius: 8).fill(Color.blue))
-                        
-                    }
-            }.disabled(inputImage == "")
+            NavigationLink(destination: DisplayImage()) {
+                if inputImage == "" {
+                    Text("Continue")
+                       .foregroundColor(.white)
+                       .padding(10)
+                       .background(RoundedRectangle(cornerRadius: 8).fill(Color.gray))
+                } else {
+                    Text("Continue")
+                        .foregroundColor(.white)
+                        .padding(10)
+                        .background(RoundedRectangle(cornerRadius: 8).fill(Color.blue))
+                    
+                }
+            }
+            .simultaneousGesture(TapGesture().onEnded {
+                ApiViewModel(text: inputImage, numberImages: numberImages)
+            }).disabled(inputImage == "")
         }
     }
 }

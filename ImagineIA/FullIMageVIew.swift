@@ -11,6 +11,10 @@ import SwiftUI
 struct FullImageView: View {
     @State var image: Image
     
+    init(image: Image) {
+        self.image = image
+    }
+    
     var body: some View {
         Group {
             GeometryReader { geo in
@@ -25,6 +29,8 @@ struct FullImageView: View {
             }
         }.onAppear() {
             Interstitial.shared.loadInterstitial()
+            Interstitial.shared.showInterstitialAds()
         }
     }
 }
+
